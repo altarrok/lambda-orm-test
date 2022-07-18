@@ -1,0 +1,22 @@
+{
+  "name": "@ino-estc/services-shared",
+  "version": "0.0.0",
+  "description": "shared services logic",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@trpc/server": "^9.26.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "watch": "babel --extensions .ts,.tsc ./src -d ./dist --watch",
+    "build": "tsc --pretty && babel --extensions .ts,.tsc ./src -d ./dist"
+  }
+}
