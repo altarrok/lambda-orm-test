@@ -1,0 +1,15 @@
+{
+  "name": "@ino-estc/core",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@ino-estc/tournament": "0.0.0",
+    "@ino-estc/services-shared": "0.0.0",
+    "@trpc/server": "^9.26.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}
