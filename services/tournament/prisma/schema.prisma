@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator zod {
+  provider                 = "zod-prisma"
+  output                   = "../zod"
+  relationModel            = true
+  modelCase                = "PascalCase"
+  modelSuffix              = "Model"
+  useDecimalJs             = true
+  prismaJsonNullability    = true
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Tournament {
+  id String @id @default(cuid()) @map("_id") @db.ObjectId
+}
