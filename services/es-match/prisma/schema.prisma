@@ -18,6 +18,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Tournament {
+model EsMatch {
   id String @id @default(cuid()) @map("_id") @db.ObjectId
 }

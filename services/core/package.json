@@ -5,6 +5,7 @@
   "main": "src/index.ts",
   "dependencies": {
     "@ino-estc/tournament": "0.0.0",
+    "@ino-estc/es-match": "0.0.0",
     "@ino-estc/services-shared": "0.0.0",
     "@trpc/server": "^9.26.0"
   },

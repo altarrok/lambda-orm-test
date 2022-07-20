@@ -1,4 +1,4 @@
-import { Tournament } from "@prisma/client";
+import { Tournament } from "./generated/prisma-client";
 import { TournamentRepository } from "./TournamentRepository";
 
 export const createTournament = async (tournament: Tournament) => {
