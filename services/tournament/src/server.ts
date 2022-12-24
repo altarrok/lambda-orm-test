@@ -1,13 +1,13 @@
-import { TournamentModel } from '../zod';
-import { createTournament } from './TournamentService';
+import { TournamentCreateInputObjectSchema } from './generated/zod/schemas/objects/TournamentCreateInput.schema';
 import { awsLambdaRequestHandler } from '@trpc/server/adapters/aws-lambda';
 import { createAWSLambdaRouter, createContext } from '@ino-estc/services-shared';
+import { TournamentServiceImpl } from './TournamentServiceImpl';
 
 export const appRouter = createAWSLambdaRouter()
   .mutation('createTournament', {
-    input: TournamentModel,
+    input: TournamentCreateInputObjectSchema,
     async resolve(req) {
-      return await createTournament(req.input);
+      return await TournamentServiceImpl.createTournament(req.input);
     },
   });
 

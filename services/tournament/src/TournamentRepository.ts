@@ -1,4 +1,5 @@
-import { PrismaClient } from './generated/prisma-client';
+import { Prisma, Tournament } from "./generated/prisma-client";
 
-export const TournamentRepository = new PrismaClient().tournament;
-
+export interface TournamentRepository {
+    createTournament(tournament: Prisma.TournamentCreateInput): Promise<Tournament>
+}

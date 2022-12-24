@@ -1,0 +1,16 @@
+{
+    "presets": [[
+        "@babel/preset-env", {
+            "useBuiltIns": "usage",
+            "loose": true,
+            "modules": "auto",
+            "corejs": 3
+        }],
+        "@babel/preset-react",
+        "@babel/preset-typescript"
+    ],
+    "overrides": [{
+        "test": "./node_modules",
+        "sourceType": "unambiguous"
+    }]
+}

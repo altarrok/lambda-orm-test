@@ -3,6 +3,6 @@ import { EsMatchRepository } from "./EsMatchRepository";
 import { TournamentClient } from "@ino-estc/tournament";
 
 export const createEsMatch = async (esMatch: EsMatch) => {
-    await TournamentClient.mutation("createTournament", { id: 'woo' });
+    await TournamentClient.mutation("createTournament", { });
     await EsMatchRepository.create({ data: esMatch });
 }

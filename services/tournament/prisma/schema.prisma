@@ -1,16 +1,13 @@
 generator client {
   provider = "prisma-client-js"
   output   = "../src/generated/prisma-client"
+  binaryTargets = ["native", "rhel-openssl-1.0.x"]
+  previewFeatures = ["metrics"]
 }
 
-generator zod {
-  provider                 = "zod-prisma"
-  output                   = "../zod"
-  relationModel            = true
-  modelCase                = "PascalCase"
-  modelSuffix              = "Model"
-  useDecimalJs             = true
-  prismaJsonNullability    = true
+generator zod { 
+  provider = "prisma-zod-generator"
+  output = "../src/generated/zod"
 }
 
 datasource db {
@@ -19,5 +16,5 @@ datasource db {
 }
 
 model Tournament {
-  id String @id @default(cuid()) @map("_id") @db.ObjectId
+  id String @id @default(auto()) @map("_id") @db.ObjectId
 }

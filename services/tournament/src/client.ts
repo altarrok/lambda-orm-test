@@ -1,11 +1,8 @@
 import { appRouter } from './server';
 import { createTRPCClient } from '@trpc/client';
-import { env } from 'process';
-
-if (!env["LAMBDA_URL"]) {
-    throw new Error("LAMDA_URL must be set as an env variable");
-}
+import fetch from 'node-fetch';
 
 export const client = createTRPCClient<typeof appRouter>({
-  url: env["LAMBDA_URL"],
+  url: 'https://dtn3w8sk40.execute-api.us-east-1.amazonaws.com/Prod/createTournament/',
+  fetch: fetch as any
 });

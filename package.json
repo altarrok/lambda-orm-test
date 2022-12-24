@@ -12,7 +12,15 @@
     "clean": "npx npkill"
   },
   "devDependencies": {
-    "nx": "14.4.2",
-    "@nrwl/nx-cloud": "latest"
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@babel/runtime-corejs3": "^7.18.9",
+    "@nrwl/nx-cloud": "latest",
+    "babel-loader": "^8.2.5",
+    "core-js": "3",
+    "cross-var": "^1.1.0",
+    "nx": "14.4.2"
   }
 }

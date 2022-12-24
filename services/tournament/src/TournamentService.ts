@@ -1,6 +1,5 @@
-import { Tournament } from "./generated/prisma-client";
-import { TournamentRepository } from "./TournamentRepository";
+import { Prisma, Tournament } from "./generated/prisma-client";
 
-export const createTournament = async (tournament: Tournament) => {
-    await TournamentRepository.create({ data: tournament });    
+export interface TournamentService {
+    createTournament: (tournament: Prisma.TournamentCreateInput) => Promise<Tournament>;
 }
