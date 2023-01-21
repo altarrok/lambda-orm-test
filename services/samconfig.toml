@@ -3,7 +3,7 @@ version = 0.1
 [default.deploy]
 [default.deploy.parameters]
 stack_name = "estc-services"
-s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-303nq73m0ml4"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-2q8l5lk7nahk"
 s3_prefix = "estc-services"
 region = "us-east-1"
 confirm_changeset = true

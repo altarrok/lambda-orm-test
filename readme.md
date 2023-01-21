@@ -16,19 +16,19 @@ DB | ORM | MEMORY
 
 # Aurora 
 
-- Amazon Aurora | Prisma | 128 MB =
+- (K) Amazon Aurora | Prisma | 128 MB =
 - Amazon Aurora | Sequalize | 128 MB =
 - Amazon Aurora | TypeORM | 128 MB =
 
-- Amazon Aurora | Prisma | 256 MB =
+- (K) Amazon Aurora | Prisma | 256 MB =
 - Amazon Aurora | Sequalize | 256 MB =
 - Amazon Aurora | TypeORM | 256 MB =
 
-- Amazon Aurora | Prisma | 512 MB =
+- (K) Amazon Aurora | Prisma | 512 MB =
 - Amazon Aurora | Sequalize | 512 MB =
 - Amazon Aurora | TypeORM | 512 MB =
 
-- Amazon Aurora | Prisma | 1024 MB =
+- (K) Amazon Aurora | Prisma | 1024 MB =
 - Amazon Aurora | Sequalize | 1024 MB =
 - Amazon Aurora | TypeORM | 1024 MB =
 

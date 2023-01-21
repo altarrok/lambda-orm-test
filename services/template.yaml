@@ -37,16 +37,16 @@ Resources:
             Path: /createTournament
             Method: post
       MemorySize: 256
-      VpcConfig: 
-        SecurityGroupIds:
-          - sg-095e1adef797b94ea
-        SubnetIds:
-          - subnet-0b180ff511fc72a42
-          - subnet-09d23a73422f404b8
-          - subnet-0cc9ba56866e576f1
-          - subnet-06a34a022126ac6b3
-          - subnet-03f0e233f8788e9b6
-          - subnet-07573745f0487de3f
+      # VpcConfig: 
+      #   SecurityGroupIds:
+      #     - sg-095e1adef797b94ea
+      #   SubnetIds:
+      #     - subnet-0b180ff511fc72a42
+      #     - subnet-09d23a73422f404b8
+      #     - subnet-0cc9ba56866e576f1
+      #     - subnet-06a34a022126ac6b3
+      #     - subnet-03f0e233f8788e9b6
+      #     - subnet-07573745f0487de3f
 
 Outputs:
   TournamentServiceApi:
