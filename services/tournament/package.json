@@ -31,7 +31,8 @@
   "scripts": {
     "build": "yarn webpack --config webpack.config.js",
     "prisma-migrate": "yarn prisma db push && yarn prisma generate",
-    "postinstall": "yarn prisma generate"
+    "postinstall": "yarn prisma generate",
+    "deploy": "cd .. && sam build && cd tournament && yarn build && cd .. && sam deploy"
   },
   "workspaces": {
     "nohoist": [
